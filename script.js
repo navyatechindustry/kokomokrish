@@ -282,6 +282,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Touch gestures for swipe support on mobile devices
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    const handleLightboxSwipe = () => {
+        const minSwipeDistance = 50; // pixels
+        const diffX = touchEndX - touchStartX;
+        if (Math.abs(diffX) > minSwipeDistance) {
+            if (diffX > 0) {
+                showPrevImage(); // Swipe Right -> Prev
+            } else {
+                showNextImage(); // Swipe Left -> Next
+            }
+        }
+    };
+
+    if (lightboxModal) {
+        lightboxModal.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].clientX;
+        }, { passive: true });
+
+        lightboxModal.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].clientX;
+            handleLightboxSwipe();
+        }, { passive: true });
+    }
+
     /* ==========================================================================
        SANCTUARY MAP WIDGET INTEGRATION
        ========================================================================== */
