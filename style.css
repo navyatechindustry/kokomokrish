@@ -1408,14 +1408,24 @@ img {
         font-size: 0.75rem;
     }
 
-    /* Force columns on mobile to resolve the columns layout bug */
+    /* Dynamic 2-column square grid layout for responsive, aspect-ratio friendly images */
     .gallery-masonry {
-        columns: 2;
-        column-gap: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        columns: auto; /* Reset columns */
     }
 
     .gallery-item {
-        margin-bottom: 15px;
+        margin-bottom: 0;
+        aspect-ratio: 1; /* Force perfect square cells */
+        height: auto;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Crop and cover image space beautifully */
     }
 }
 
@@ -1509,10 +1519,12 @@ img {
         gap: 15px;
     }
 
-    /* 1 column on very narrow viewports */
+    /* Maintain premium 2-column square grid with tighter gaps for narrow screens */
     .gallery-masonry {
-        columns: 1;
-        column-gap: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        columns: auto; /* Reset columns */
     }
 
     .sanctuary-map-widget {
