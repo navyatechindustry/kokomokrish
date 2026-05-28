@@ -1407,6 +1407,16 @@ img {
         padding: 8px 16px;
         font-size: 0.75rem;
     }
+
+    /* Force columns on mobile to resolve the columns layout bug */
+    .gallery-masonry {
+        columns: 2;
+        column-gap: 15px;
+    }
+
+    .gallery-item {
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-height: 520px) {
@@ -1497,6 +1507,12 @@ img {
         flex-direction: column;
         text-align: center;
         gap: 15px;
+    }
+
+    /* 1 column on very narrow viewports */
+    .gallery-masonry {
+        columns: 1;
+        column-gap: 0;
     }
 
     .sanctuary-map-widget {
