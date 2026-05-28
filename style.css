@@ -1194,9 +1194,10 @@ img {
     border-top: var(--border-thin);
     padding-top: 40px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
     gap: 20px;
 }
 
