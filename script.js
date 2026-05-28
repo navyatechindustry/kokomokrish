@@ -423,10 +423,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (btnNav) {
             btnNav.addEventListener('click', () => {
+                const address = "4, Pratap, Cafe Kokomo, CHS LTD, Shivaji Road, near Vakola Bridge, Pratiksha Nagar, Vakola, Santacruz East, Mumbai, Maharashtra 400055";
+                const destination = encodeURIComponent(address);
                 if (userLat && userLng) {
-                    window.open(`https://www.google.com/maps/dir/?api=1&origin=${userLat},${userLng}&destination=${CAFE_LAT},${CAFE_LNG}&travelmode=driving`, '_blank');
+                    window.open(`https://www.google.com/maps/dir/?api=1&origin=${userLat},${userLng}&destination=${destination}&travelmode=driving`, '_blank');
                 } else {
-                    window.open(`https://www.google.com/maps/dir/?api=1&destination=${CAFE_LAT},${CAFE_LNG}&travelmode=driving`, '_blank');
+                    window.open(`https://www.google.com/maps/dir/?api=1&destination=${destination}&travelmode=driving`, '_blank');
                 }
             });
         }

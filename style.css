@@ -1180,6 +1180,16 @@ img {
     line-height: 1.8;
 }
 
+.footer-address-link {
+    display: block;
+    cursor: pointer;
+    transition: all var(--duration-medium) var(--transition-slow);
+}
+
+.footer-address-link:hover .footer-info {
+    color: var(--color-text-primary);
+}
+
 .footer-bottom {
     border-top: var(--border-thin);
     padding-top: 40px;
