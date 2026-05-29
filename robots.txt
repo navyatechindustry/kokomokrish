@@ -1,9 +1,21 @@
-# robots.txt for Cafe Kokomo
 User-agent: *
 Allow: /
 
-# Host domain
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
 Host: https://cafekokomo.com
 
-# Link to sitemap
 Sitemap: https://cafekokomo.com/sitemap.xml
