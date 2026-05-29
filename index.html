@@ -4,10 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe Kokomo</title>
+    <title>Cafe Kokomo | Cozy Cafe in Santacruz East, Mumbai</title>
+    <link rel="canonical" href="https://cafekokomo.com/">
     <meta name="description"
-        content="Welcome to Cafe Kokomo. A cozy cafe in Santacruz East for coffee, comfort food, quick bites, and easy conversations.">
-    
+        content="Welcome to Cafe Kokomo. A cozy cafe in Santacruz East for coffee, comfort food, quick bites, and easy conversations. Open daily 11 AM to 11 PM.">
+
+    <!-- Open Graph / Facebook / Instagram / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cafekokomo.com/">
+    <meta property="og:title" content="Cafe Kokomo | Cozy Cafe in Santacruz East, Mumbai">
+    <meta property="og:description" content="Welcome to Cafe Kokomo. A cozy, tropical-themed cafe in Santacruz East for specialty coffee, comfort food, quick bites, and easy conversations.">
+    <meta property="og:image" content="https://cafekokomo.com/assets/images/media__1779297184171.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Cozy Cafe Kokomo interior and signature dishes">
+
+    <!-- Twitter / X -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cafekokomo.com/">
+    <meta property="twitter:title" content="Cafe Kokomo | Cozy Cafe in Santacruz East, Mumbai">
+    <meta property="twitter:description" content="Welcome to Cafe Kokomo. A cozy, tropical-themed cafe in Santacruz East for specialty coffee, comfort food, quick bites, and easy conversations.">
+    <meta property="twitter:image" content="https://cafekokomo.com/assets/images/media__1779297184171.jpg">
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -80,7 +99,8 @@
                 bites, and easy conversations.</p>
             <div class="hero-ctas fade-in-element">
                 <a href="#menu" class="btn btn-primary">View menu</a>
-                <a href="#experience" class="btn btn-secondary">Visit us</a>
+                <a href="#map-section" class="btn btn-secondary">Visit us</a>
+                <a href="javascript:void(0)" id="order-online-btn" class="btn btn-primary">Order Online</a>
             </div>
         </div>
         <a href="#about" class="hero-scroll-indicator" aria-label="Scroll Down">
@@ -175,7 +195,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹129</span>
                     </div>
-                    <p class="menu-item-desc">Unwind with our fun Sip & Paint activity! For just ₹99, get your own
+                    <p class="menu-item-desc">Unwind with our fun Sip & Paint activity! For just ₹129, get your own
                         personal canvas, brushes, and paints — and take your masterpiece home with you. No experience
                         needed, just good vibes and creative energy!</p>
 
@@ -198,7 +218,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹149</span>
                     </div>
-                    <p class="menu-item-desc">Single shot of freshly grinded and brewed espresso</p>
+                    <p class="menu-item-desc">Single shot of freshly ground and brewed espresso.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -210,7 +230,8 @@
                         <span class="menu-item-price">₹235</span>
                     </div>
                     <p class="menu-item-desc">A rich espresso shot topped with hot water, smooth and bold.</p>
-                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i> Customisable</span>
+                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
+                            Customisable</span>
                     </div>
                 </div>
                 <!-- Cappuccino -->
@@ -221,10 +242,10 @@
                         <span class="menu-item-price">₹255</span>
                     </div>
                     <p class="menu-item-desc">Our signature espresso shot with a smooth layer of milk and foam. Vegan
-                        Milk Options Available.</p>
+                        milk options available.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span><span class="menu-meta-item text-warning"><i data-lucide="info"></i>
-                            Contains Milk</span></div>
+                            Contains milk</span></div>
                 </div>
                 <!-- Latte -->
                 <div class="menu-item-card" data-category="coffee">
@@ -234,20 +255,21 @@
                         <span class="menu-item-price">₹275</span>
                     </div>
                     <p class="menu-item-desc">Our signature espresso shot with a smooth layer of milk and foam. Vegan
-                        Milk Options Available.</p>
+                        milk options available.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span><span class="menu-meta-item text-warning"><i data-lucide="info"></i>
-                            Contains Milk</span></div>
+                            Contains milk</span></div>
                 </div>
                 <!-- Caramel Latte Macchiato -->
                 <div class="menu-item-card" data-category="coffee">
                     <div class="menu-item-header">
-                        <h4 class="menu-item-name">Caramel Latte Macchiato</h4>
+                        <h4 class="menu-item-name">Caramel latte macchiato</h4>
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹295</span>
                     </div>
                     <p class="menu-item-desc">Signature espresso served with steamed milk and a little foam.</p>
-                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i> Customisable</span>
+                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
+                            Customisable</span>
                     </div>
                 </div>
                 <!-- Mocha -->
@@ -259,60 +281,62 @@
                     </div>
                     <p class="menu-item-desc">Our signature espresso shot with a smooth layer of milk, mocha sauce and
                         foam.</p>
-                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i> Customisable</span>
+                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
+                            Customisable</span>
                     </div>
                 </div>
                 <!-- Cheesecake Latte -->
                 <div class="menu-item-card" data-category="coffee">
                     <div class="menu-item-header">
-                        <h4 class="menu-item-name">Cheesecake Latte</h4>
+                        <h4 class="menu-item-name">Cheesecake latte</h4>
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹295</span>
                     </div>
                     <p class="menu-item-desc">Our signature espresso shot with a smooth layer of milk and foam flavoured
-                        with cheesecake syrup</p>
+                        with cheesecake syrup.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
                 <!-- Hazelnut Latte -->
                 <div class="menu-item-card" data-category="coffee">
                     <div class="menu-item-header">
-                        <h4 class="menu-item-name">Hazelnut Latte</h4>
+                        <h4 class="menu-item-name">Hazelnut latte</h4>
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹295</span>
                     </div>
                     <p class="menu-item-desc">Our signature espresso shot with a smooth layer of milk and foam flavoured
-                        with hazelnut syrup</p>
+                        with hazelnut syrup.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
                 <!-- Caramel Latte -->
                 <div class="menu-item-card" data-category="coffee">
                     <div class="menu-item-header">
-                        <h4 class="menu-item-name">Caramel Latte</h4>
+                        <h4 class="menu-item-name">Caramel latte</h4>
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹295</span>
                     </div>
                     <p class="menu-item-desc">Our signature espresso shot with a smooth layer of milk and foam flavoured
-                        with caramel syrup</p>
+                        with caramel syrup.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
                 <!-- Flat White -->
                 <div class="menu-item-card" data-category="coffee">
                     <div class="menu-item-header">
-                        <h4 class="menu-item-name">Flat White</h4>
+                        <h4 class="menu-item-name">Flat white</h4>
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹255</span>
                     </div>
                     <p class="menu-item-desc">Espresso with hot milk and a thin layer of foam.</p>
-                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i> Customisable</span>
+                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
+                            Customisable</span>
                     </div>
                 </div>
                 <!-- Classic White Mocha -->
                 <div class="menu-item-card" data-category="coffee">
                     <div class="menu-item-header">
-                        <h4 class="menu-item-name">Classic White Mocha</h4>
+                        <h4 class="menu-item-name">Classic white mocha</h4>
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹295</span>
                     </div>
@@ -324,14 +348,15 @@
                 <!-- Spanish Latte -->
                 <div class="menu-item-card" data-category="coffee">
                     <div class="menu-item-header">
-                        <h4 class="menu-item-name">Spanish Latte</h4>
+                        <h4 class="menu-item-name">Spanish latte</h4>
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹295</span>
                     </div>
                     <p class="menu-item-desc">Our signature espresso shot blended with creamy sweetened condensed milk,
                         layered with steamed milk, vanilla notes, and a smooth layer of foam—rich, velvety, and
                         perfectly balanced.</p>
-                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i> Customisable</span>
+                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
+                            Customisable</span>
                     </div>
                 </div>
                 <!-- Cortado -->
@@ -341,14 +366,14 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹299</span>
                     </div>
-                    <p class="menu-item-desc">Double espresso and 60ml textured milk</p>
+                    <p class="menu-item-desc">Double espresso and 60ml of textured milk.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
                 <!-- Honey Cappuccino -->
                 <div class="menu-item-card" data-category="coffee">
                     <div class="menu-item-header">
-                        <h4 class="menu-item-name">Honey Cappuccino</h4>
+                        <h4 class="menu-item-name">Honey cappuccino</h4>
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹299</span>
                     </div>
@@ -359,34 +384,36 @@
                 <!-- Iced Caramel Latte -->
                 <div class="menu-item-card" data-category="coffee">
                     <div class="menu-item-header">
-                        <h4 class="menu-item-name">Iced Caramel Latte</h4>
+                        <h4 class="menu-item-name">Iced caramel latte</h4>
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹295</span>
                     </div>
-                    <p class="menu-item-desc">Signature espresso served with steamed milk & a lil foam</p>
-                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i> Customisable</span>
+                    <p class="menu-item-desc">Signature espresso served with steamed milk and a little foam.</p>
+                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
+                            Customisable</span>
                     </div>
                 </div>
                 <!-- Iced Hazelnut Latte -->
                 <div class="menu-item-card" data-category="coffee">
                     <div class="menu-item-header">
-                        <h4 class="menu-item-name">Iced Hazelnut Latte</h4>
+                        <h4 class="menu-item-name">Iced hazelnut latte</h4>
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹295</span>
                     </div>
                     <p class="menu-item-desc">Signature espresso served with steamed milk and a little foam.</p>
-                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i> Customisable</span>
+                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
+                            Customisable</span>
                     </div>
                 </div>
                 <!-- Iced Cheesecake Latte -->
                 <div class="menu-item-card" data-category="coffee">
                     <div class="menu-item-header">
-                        <h4 class="menu-item-name">Iced Cheesecake Latte</h4>
+                        <h4 class="menu-item-name">Iced cheesecake latte</h4>
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹295</span>
                     </div>
-                    <p class="menu-item-desc">Signature espresso served with cheesecake flavoured steamed milk & a lil
-                        foam</p>
+                    <p class="menu-item-desc">Signature espresso served with cheesecake-flavoured steamed milk and a
+                        little foam.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -398,7 +425,8 @@
                         <span class="menu-item-price">₹235</span>
                     </div>
                     <p class="menu-item-desc">Beat the heat with our special espresso over ice and water.</p>
-                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i> Customisable</span>
+                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
+                            Customisable</span>
                     </div>
                 </div>
                 <!-- Iced Latte -->
@@ -409,7 +437,8 @@
                         <span class="menu-item-price">₹275</span>
                     </div>
                     <p class="menu-item-desc">Beat the heat with our special espresso over milk and foam.</p>
-                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i> Customisable</span>
+                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
+                            Customisable</span>
                     </div>
                 </div>
                 <!-- Iced Mocha -->
@@ -419,8 +448,9 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹299</span>
                     </div>
-                    <p class="menu-item-desc">Beat the heat with our special espresso ice and milk with chocolate.</p>
-                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i> Customisable</span>
+                    <p class="menu-item-desc">Beat the heat with our special espresso, ice, milk, and chocolate.</p>
+                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
+                            Customisable</span>
                     </div>
                 </div>
                 <!-- The Classic Cold Coffee -->
@@ -440,8 +470,10 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹295</span>
                     </div>
-                    <p class="menu-item-desc">An invigorating blend of bold espresso, zesty yuzu, and sparkling soda</p>
-                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i> Customisable</span>
+                    <p class="menu-item-desc">An invigorating blend of bold espresso, zesty yuzu, and sparkling soda.
+                    </p>
+                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
+                            Customisable</span>
                     </div>
                 </div>
                 <!-- Iced White Mocha -->
@@ -465,7 +497,8 @@
                     </div>
                     <p class="menu-item-desc">Tropical twist on iced coffee – hydrating coconut water meets bold
                         espresso.</p>
-                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i> Customisable</span>
+                    <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
+                            Customisable</span>
                     </div>
                 </div>
                 <!-- Iced Spanish Latte -->
@@ -512,7 +545,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹299</span>
                     </div>
-                    <p class="menu-item-desc">Double espresso with 10ml jaggery & 60ml choice of milk</p>
+                    <p class="menu-item-desc">Double espresso with 10ml of jaggery and 60ml of choice milk.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -621,7 +654,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹250</span>
                     </div>
-                    <p class="menu-item-desc">Moms special hot chocolate when nothing else seems right.</p>
+                    <p class="menu-item-desc">Mom's special hot chocolate when nothing else seems right.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -632,7 +665,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹270</span>
                     </div>
-                    <p class="menu-item-desc">Moms special hot chocolate when nothing else seems right.</p>
+                    <p class="menu-item-desc">Mom's special hot chocolate when nothing else seems right.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -643,7 +676,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹270</span>
                     </div>
-                    <p class="menu-item-desc">hot chocolate with rich caramel sauce</p>
+                    <p class="menu-item-desc">Hot chocolate with rich caramel sauce.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -654,7 +687,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹299</span>
                     </div>
-                    <p class="menu-item-desc">Kokomo Special</p>
+                    <p class="menu-item-desc">Kokomo special.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -665,7 +698,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹299</span>
                     </div>
-                    <p class="menu-item-desc">Classic Hot chocolate with a shot of our signature espresso to give that
+                    <p class="menu-item-desc">Classic hot chocolate with a shot of our signature espresso to give that
                         kick on your chocolaty mornings.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
@@ -712,7 +745,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹350</span>
                     </div>
-                    <p class="menu-item-desc">Mocha sauce, Espresso, milk and ice all come together for a mocha flavor
+                    <p class="menu-item-desc">Mocha sauce, espresso, milk, and ice all come together for a mocha flavour
                         that'll leave you wanting more.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
@@ -724,8 +757,8 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹350</span>
                     </div>
-                    <p class="menu-item-desc">For all the Caramel lovers out there, Espresso, milk and caramel sauce
-                        together makes a delicious sweet treat.</p>
+                    <p class="menu-item-desc">For all the caramel lovers out there, espresso, milk, and caramel sauce
+                        together make a delicious sweet treat.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -736,8 +769,8 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹350</span>
                     </div>
-                    <p class="menu-item-desc">Rich Nutella, Espresso, milk and ice all come together for a chocolaty
-                        flavor that'll leave you wanting more.</p>
+                    <p class="menu-item-desc">Rich Nutella, espresso, milk, and ice all come together for a chocolaty
+                        flavour that'll leave you wanting more.</p>
 
                 </div>
                 <!-- Hazelnut Frappe -->
@@ -747,7 +780,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹350</span>
                     </div>
-                    <p class="menu-item-desc">The nutty Hazelnut flavour just gives a boost to a low key funday. Made
+                    <p class="menu-item-desc">The nutty hazelnut flavour just gives a boost to a low-key funday. Made
                         with speciality coffee.</p>
 
                 </div>
@@ -758,8 +791,8 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹350</span>
                     </div>
-                    <p class="menu-item-desc">Unique Cheesecake Frappe made with Espresso, milk and ice all come
-                        together for a creamy flavor. It's one of a kind.</p>
+                    <p class="menu-item-desc">Unique cheesecake frappe made with espresso, milk, and ice all coming
+                        together for a creamy flavour—it's one of a kind.</p>
 
                 </div>
                 <!-- Classic Lemon Iced Tea -->
@@ -769,8 +802,8 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹199</span>
                     </div>
-                    <p class="menu-item-desc">Iced Tea Is Something That Every Tea-Lover Is Thankful For In The Hot
-                        Summer Months When You Need Your Tea Fix But Also Crave Something That Is Cooler.</p>
+                    <p class="menu-item-desc">Iced tea is something that every tea lover is thankful for in the hot
+                        summer months when you need your tea fix but also crave something that is cooler.</p>
 
                 </div>
                 <!-- Not Your Basic Iced Tea -->
@@ -780,9 +813,9 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹199</span>
                     </div>
-                    <p class="menu-item-desc">Iced Tea Bliss Is The Perfect Summer Cooler, Blending The Classic Tea
-                        Essence With A Refreshing Twist! Choose From Vibrant Blueberry, Exotic Passion Fruit, Juicy
-                        Strawberry, Or Bold Blue Curacao.</p>
+                    <p class="menu-item-desc">Iced tea bliss is the perfect summer cooler, blending the classic tea
+                        essence with a refreshing twist! Choose from vibrant Blueberry, exotic Passion Fruit, juicy
+                        Strawberry, or bold Blue Curacao.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -793,7 +826,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹149</span>
                     </div>
-                    <p class="menu-item-desc">Low-sugar way to add a range of vitamins and minerals to your
+                    <p class="menu-item-desc">A low-sugar way to add a range of vitamins and minerals to your
                         diet.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
@@ -827,7 +860,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹225</span>
                     </div>
-                    <p class="menu-item-desc">Ultimate summer refresher, combining mint and lime with your choice of
+                    <p class="menu-item-desc">The ultimate summer refresher, combining mint and lime with your choice of
                         vibrant Blueberry, Passion Fruit, Strawberry, or Blue Curacao.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
@@ -839,8 +872,9 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹199</span>
                     </div>
-                    <p class="menu-item-desc">Tangy Indian version of carbonated lemonade made with lemon, ginger, jeera
-                        powder and Indian spices.</p>
+                    <p class="menu-item-desc">A tangy Indian version of carbonated lemonade, made with lemon, ginger,
+                        jeera
+                        powder, and Indian spices.</p>
 
                 </div>
                 <!-- Sparkling Yuzu Spritz -->
@@ -871,7 +905,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹249</span>
                     </div>
-                    <p class="menu-item-desc">Pure, simple, natural refreshment - cold pressed.</p>
+                    <p class="menu-item-desc">Pure, simple, and natural refreshment—cold-pressed.</p>
 
                 </div>
                 <!-- Oreo Milkshake -->
@@ -881,7 +915,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹249</span>
                     </div>
-                    <p class="menu-item-desc">Rich in oreos and a timeless classic!</p>
+                    <p class="menu-item-desc">Rich in Oreos and a timeless classic!</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -892,8 +926,8 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹249</span>
                     </div>
-                    <p class="menu-item-desc">All time favourite black forest cake flavoured milkshake! Crunchy
-                        chocolate chips and our secret ingredients bring out the best chocolate chip milkshake</p>
+                    <p class="menu-item-desc">An all-time favourite Black Forest cake flavoured milkshake! Crunchy
+                        chocolate chips and our secret ingredients bring out the best chocolate chip milkshake.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -916,7 +950,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹249</span>
                     </div>
-                    <p class="menu-item-desc">Oreo and cheesecake is always amazing</p>
+                    <p class="menu-item-desc">Oreo and cheesecake is always amazing.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -962,7 +996,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹249</span>
                     </div>
-                    <p class="menu-item-desc">Rich in oreos and strawberries, a timeless fruity-chocolate classic!</p>
+                    <p class="menu-item-desc">Rich in Oreos and strawberries, a timeless fruity-chocolate classic!</p>
 
                 </div>
                 <!-- English Breakfast -->
@@ -984,8 +1018,8 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹299</span>
                     </div>
-                    <p class="menu-item-desc">Chicken sausages & hash brown bites | secret sauce, sunny side up & cheese
-                        | comfort breakfast</p>
+                    <p class="menu-item-desc">Chicken sausages & hash brown bites | Secret sauce, sunny side up & cheese
+                        | Comfort breakfast.</p>
 
                 </div>
                 <!-- Breakfast Loaded Poutine -->
@@ -995,8 +1029,8 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹299</span>
                     </div>
-                    <p class="menu-item-desc">Fries loaded with chicken sausages | house sauce, sunny side up & melted
-                        cheese | café favorite</p>
+                    <p class="menu-item-desc">Fries loaded with chicken sausages | House sauce, sunny-side up & melted
+                        cheese | Café favourite.</p>
 
                 </div>
                 <!-- Butter Garlic Sausages -->
@@ -1006,7 +1040,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹225</span>
                     </div>
-                    <p class="menu-item-desc">Breakfast sausages | butter, garlic & olive oil | rich & flavorful</p>
+                    <p class="menu-item-desc">Breakfast sausages | Butter, garlic & olive oil | Rich & flavourful.</p>
 
                 </div>
                 <!-- Kokomo Special Pancakes -->
@@ -1079,7 +1113,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹249</span>
                     </div>
-                    <p class="menu-item-desc">Crispy fries eggs with cheese.</p>
+                    <p class="menu-item-desc">Crispy fried eggs with cheese.</p>
 
                 </div>
                 <!-- Scrambled Egg & Cheese Bagel -->
@@ -1133,7 +1167,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹225</span>
                     </div>
-                    <p class="menu-item-desc">3 Organic Eggs Served With Toast</p>
+                    <p class="menu-item-desc">Three organic eggs served with toast.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1144,7 +1178,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹199</span>
                     </div>
-                    <p class="menu-item-desc">2 Organic Fried Eggs Served With Toast</p>
+                    <p class="menu-item-desc">Two organic fried eggs served with toast.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1155,7 +1189,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹199</span>
                     </div>
-                    <p class="menu-item-desc">Masala Omelette Made With Organic Eggs Served With Toast</p>
+                    <p class="menu-item-desc">Masala omelette made with organic eggs, served with toast.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1167,7 +1201,8 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹225</span>
                     </div>
-                    <p class="menu-item-desc">Egg Whites Omelette With Assorted Veggies, Cheese Served With Toast</p>
+                    <p class="menu-item-desc">Egg white omelette with assorted veggies and cheese, served with toast.
+                    </p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1178,7 +1213,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹275</span>
                     </div>
-                    <p class="menu-item-desc">Chicken and Cheese Omelette Served With Toast</p>
+                    <p class="menu-item-desc">Chicken and cheese omelette served with toast.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1189,7 +1224,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹275</span>
                     </div>
-                    <p class="menu-item-desc">Creamy Scrambled Eggs With Saucy Sausages Served With Toast</p>
+                    <p class="menu-item-desc">Creamy scrambled eggs with saucy sausages, served with toast.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1211,7 +1246,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹249</span>
                     </div>
-                    <p class="menu-item-desc">Crispy fried wings tossed in a peri peri glaze | Bold, fiery & addictive.
+                    <p class="menu-item-desc">Crispy fried wings tossed in a peri-peri glaze | Bold, fiery, & addictive.
                     </p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
@@ -1291,7 +1326,8 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹299</span>
                     </div>
-                    <p class="menu-item-desc">Crispy fries tossed in a spicy-sweet Thai chili sauce and fresh spring
+                    <p class="menu-item-desc">Crispy fries tossed in a spicy-sweet Thai chili sauce, garnished with
+                        fresh spring
                         onions.</p>
 
                 </div>
@@ -1347,7 +1383,8 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹275</span>
                     </div>
-                    <p class="menu-item-desc">Crispy colorful gluten-free nachos, crunchy salsa, house cheese sauce, and
+                    <p class="menu-item-desc">Crispy, colourful, gluten-free nachos with crunchy salsa, house cheese
+                        sauce, and
                         fresh veggies.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
@@ -1430,7 +1467,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹325</span>
                     </div>
-                    <p class="menu-item-desc">Homemade smooth hummus, peri peri chicken chunks, hot garlic butter,
+                    <p class="menu-item-desc">Homemade smooth hummus, peri-peri chicken chunks, hot garlic butter,
                         served with crispy pita chips.</p>
 
                 </div>
@@ -1452,7 +1489,8 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹299</span>
                     </div>
-                    <p class="menu-item-desc">Crispy colorful gluten-free nachos, seasoned grilled chicken, zesty salsa,
+                    <p class="menu-item-desc">Crispy, colourful, gluten-free nachos, seasoned grilled chicken, zesty
+                        salsa,
                         and house cheese sauce.</p>
 
                 </div>
@@ -1474,7 +1512,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹189</span>
                     </div>
-                    <p class="menu-item-desc">Freshly baked | Light | Buttery</p>
+                    <p class="menu-item-desc">Freshly baked | Light | Buttery.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1485,7 +1523,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹225</span>
                     </div>
-                    <p class="menu-item-desc">Fresh croissant | Velvety Nutella | Icing sugar dust</p>
+                    <p class="menu-item-desc">Fresh croissant | Velvety Nutella | Icing sugar dust.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1496,7 +1534,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹225</span>
                     </div>
-                    <p class="menu-item-desc">Fresh croissant | Loaded with chocolate</p>
+                    <p class="menu-item-desc">Fresh croissant | Loaded with chocolate.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1507,7 +1545,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹325</span>
                     </div>
-                    <p class="menu-item-desc">Fresh croissant | Homemade basil pesto | Melted cheese</p>
+                    <p class="menu-item-desc">Fresh croissant | Homemade basil pesto | Melted cheese.</p>
 
                 </div>
                 <!-- Chicken Ham & Cheese Croissant -->
@@ -1517,7 +1555,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹325</span>
                     </div>
-                    <p class="menu-item-desc">Fresh croissant | Sliced chicken ham | Melted cheese</p>
+                    <p class="menu-item-desc">Fresh croissant | Sliced chicken ham | Melted cheese.</p>
 
                 </div>
                 <!-- Almond Croissant -->
@@ -1539,7 +1577,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹249</span>
                     </div>
-                    <p class="menu-item-desc">Freshly baked | Flaky | Mango-filled</p>
+                    <p class="menu-item-desc">Freshly baked | Flaky | Mango-filled.</p>
 
                 </div>
                 <!-- Basil Pesto Panini -->
@@ -1597,7 +1635,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹349</span>
                     </div>
-                    <p class="menu-item-desc">Herb panini | Garlic cheese | Spicy paneer | Gherkins & onions</p>
+                    <p class="menu-item-desc">Herb panini | Garlic cheese | Spicy paneer | Gherkins & onions.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1608,7 +1646,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹349</span>
                     </div>
-                    <p class="menu-item-desc">Grilled chicken | Hummus | Pickled veggies | House sauces</p>
+                    <p class="menu-item-desc">Grilled chicken | Hummus | Pickled veggies | House sauces.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1619,7 +1657,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹349</span>
                     </div>
-                    <p class="menu-item-desc">Grilled vegetables | Hummus | Pickled veggies | House sauces</p>
+                    <p class="menu-item-desc">Grilled vegetables | Hummus | Pickled veggies | House sauces.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1630,7 +1668,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹349</span>
                     </div>
-                    <p class="menu-item-desc">Crispy chicken | Korean sauce | Pickled veggies | House mayo</p>
+                    <p class="menu-item-desc">Crispy chicken | Korean sauce | Pickled veggies | House mayo.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1652,7 +1690,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹329</span>
                     </div>
-                    <p class="menu-item-desc">Al dente pasta | Crunchy Veggies | Olives | Feta cheese dressing</p>
+                    <p class="menu-item-desc">Al dente pasta | Crunchy veggies | Olives | Feta cheese dressing.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1663,7 +1701,8 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹325</span>
                     </div>
-                    <p class="menu-item-desc">Crispy falafel | Creamy hummus | Fresh vegetables | Fries | Pita bread</p>
+                    <p class="menu-item-desc">Crispy falafel | Creamy hummus | Fresh vegetables | Fries | Pita bread.
+                    </p>
 
                 </div>
                 <!-- Alfredo Pasta -->
@@ -1697,7 +1736,8 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹375</span>
                     </div>
-                    <p class="menu-item-desc">Choose your favorite pasta, sauce, and veggies, and customize it according
+                    <p class="menu-item-desc">Choose your favourite pasta, sauce, and veggies, and customize it
+                        according
                         to your taste.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
@@ -1769,7 +1809,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹275</span>
                     </div>
-                    <p class="menu-item-desc">Newyork style cheesecake | Baked goodness | Rich</p>
+                    <p class="menu-item-desc">New York-style cheesecake | Baked goodness | Rich.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1780,7 +1820,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹299</span>
                     </div>
-                    <p class="menu-item-desc">Nutella | Creamy and rich | Classic cheesecake</p>
+                    <p class="menu-item-desc">Nutella | Creamy and rich | Classic cheesecake.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1801,7 +1841,7 @@
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹179</span>
                     </div>
-                    <p class="menu-item-desc">BUTTERY MUFFIN WITH SWEET APPLES & SPICE.</p>
+                    <p class="menu-item-desc">Buttery muffin with sweet apples & spice.</p>
                     <div class="menu-item-meta"><span class="menu-meta-item"><i data-lucide="sparkles"></i>
                             Customisable</span></div>
                 </div>
@@ -1913,10 +1953,10 @@
                     <p class="menu-item-desc">Decadent extra pour of house cheese sauce.</p>
 
                 </div>
-                <!-- Chiken Extra -->
+                <!-- Chicken Extra -->
                 <div class="menu-item-card" data-category="addons">
                     <div class="menu-item-header">
-                        <h4 class="menu-item-name">Chiken</h4>
+                        <h4 class="menu-item-name">Chicken</h4>
                         <span class="menu-item-line"></span>
                         <span class="menu-item-price">₹90</span>
                     </div>
@@ -2284,418 +2324,450 @@
                 <div class="marquee-group">
                     <!-- Review 1: Jay Sudani -->
                     <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <img src="assets/users/1.png" alt="Jay Sudani Profile" class="reviewer-avatar">
-                            <div class="reviewer-meta">
-                                <h4 class="reviewer-name">Jay Sudani</h4>
-                                <p class="reviewer-stats">6 reviews &middot; 3 photos</p>
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <img src="assets/users/1.png" alt="Jay Sudani Profile" class="reviewer-avatar">
+                                <div class="reviewer-meta">
+                                    <h4 class="reviewer-name">Jay Sudani</h4>
+                                    <p class="reviewer-stats">6 reviews &middot; 3 photos</p>
+                                </div>
                             </div>
+                            <button class="review-menu-btn" aria-label="Review Actions">
+                                <i data-lucide="more-vertical"></i>
+                            </button>
                         </div>
-                        <button class="review-menu-btn" aria-label="Review Actions">
-                            <i data-lucide="more-vertical"></i>
-                        </button>
-                    </div>
-                    <div class="review-rating-row">
-                        <div class="stars">
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
+                        <div class="review-rating-row">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                            </div>
+                            <span class="review-date">5 months ago</span>
                         </div>
-                        <span class="review-date">5 months ago</span>
+                        <div class="review-body">
+                            <p>Yes, nice cafe.</p>
+                            <p>I was waiting for my bus for the travel trip and I had 2 hours time so I went there and
+                                ordered lemon ice tea and some sandwiches and food was amazing, staff behavior was top
+                                notch, clam and good atmosphere, charging point available</p>
+                            <p>Overall I would say go for it</p>
+                        </div>
                     </div>
-                    <div class="review-body">
-                        <p>Yes, nice cafe.</p>
-                        <p>I was waiting for my bus for the travel trip and I had 2 hours time so I went there and ordered lemon ice tea and some sandwiches and food was amazing, staff behavior was top notch, clam and good atmosphere, charging point available</p>
-                        <p>Overall I would say go for it</p>
+
+                    <!-- Review 2: Rushin Shah -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <img src="assets/users/3.png" alt="Rushin Shah Profile" class="reviewer-avatar">
+                                <div class="reviewer-meta">
+                                    <h4 class="reviewer-name">Rushin Shah</h4>
+                                    <p class="reviewer-stats">Local Guide &middot; 28 reviews &middot; 64 photos</p>
+                                </div>
+                            </div>
+                            <button class="review-menu-btn" aria-label="Review Actions">
+                                <i data-lucide="more-vertical"></i>
+                            </button>
+                        </div>
+                        <div class="review-rating-row">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                            </div>
+                            <span class="review-date">3 months ago</span>
+                        </div>
+                        <div class="review-body">
+                            <p>I ordered the Belgian Chocolate Panckaes from Cafe Kokomo which I randomly found on
+                                Zomato. Nothing but a banger, 10/10 for the presentation, quantity and taste. It did
+                                exceed my expectations, for someone who enjoys those fluffy pancackes, I would recommend
+                                this place for sure. I look forward to trying more dishes from this place, really
+                                impressed.</p>
+                        </div>
+                    </div>
+
+                    <!-- Review 3: Rasika Birvatkar -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <img src="assets/users/4.png" alt="Rasika Birvatkar Profile" class="reviewer-avatar">
+                                <div class="reviewer-meta">
+                                    <h4 class="reviewer-name">Rasika Birvatkar</h4>
+                                    <p class="reviewer-stats">4 reviews &middot; 4 photos</p>
+                                </div>
+                            </div>
+                            <button class="review-menu-btn" aria-label="Review Actions">
+                                <i data-lucide="more-vertical"></i>
+                            </button>
+                        </div>
+                        <div class="review-rating-row">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                            </div>
+                            <span class="review-date">4 months ago</span>
+                        </div>
+                        <div class="review-body">
+                            <p>Had a wonderful experience at Cafe Kokomo. The food was absolutely delicious and well
+                                presented. Service was quick, friendly, and attentive. The ambience is cozy and
+                                pleasant, making it a perfect place to relax and enjoy good food. Definitely worth
+                                visiting again!</p>
+                        </div>
+                    </div>
+
+                    <!-- Review 4: Prianca143 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <img src="assets/users/2.png" alt="Prianca143 Profile" class="reviewer-avatar">
+                                <div class="reviewer-meta">
+                                    <h4 class="reviewer-name">Prianca143</h4>
+                                    <p class="reviewer-stats">Local Guide &middot; 10 reviews &middot; 10 photos</p>
+                                </div>
+                            </div>
+                            <button class="review-menu-btn" aria-label="Review Actions">
+                                <i data-lucide="more-vertical"></i>
+                            </button>
+                        </div>
+                        <div class="review-rating-row">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                            </div>
+                            <span class="review-date">6 months ago</span>
+                        </div>
+                        <div class="review-body">
+                            <p>Food never dissapoints. Fantastic taste ... Recently addicted to their matcha 🍵 💖 Best
+                                gluten free cupcakes in Mumbai!! 🧁 💖 💖</p>
+                        </div>
+                    </div>
+
+                    <!-- Review 5: kati khalaj -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <img src="assets/users/5.png" alt="kati khalaj Profile" class="reviewer-avatar">
+                                <div class="reviewer-meta">
+                                    <h4 class="reviewer-name">kati khalaj</h4>
+                                    <p class="reviewer-stats">4 reviews</p>
+                                </div>
+                            </div>
+                            <button class="review-menu-btn" aria-label="Review Actions">
+                                <i data-lucide="more-vertical"></i>
+                            </button>
+                        </div>
+                        <div class="review-rating-row">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                            </div>
+                            <span class="review-date">4 months ago</span>
+                        </div>
+                        <div class="review-body">
+                            <p>Besides the delicious breakfast, the staff were extremely kind, which made the experience
+                                even better. The café had a warm, cozy, and friendly vibe.</p>
+                        </div>
+                    </div>
+
+                    <!-- Review 6: Silvi Jain -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <img src="assets/users/6.png" alt="Silvi Jain Profile" class="reviewer-avatar">
+                                <div class="reviewer-meta">
+                                    <h4 class="reviewer-name">Silvi Jain</h4>
+                                    <p class="reviewer-stats">2 reviews</p>
+                                </div>
+                            </div>
+                            <button class="review-menu-btn" aria-label="Review Actions">
+                                <i data-lucide="more-vertical"></i>
+                            </button>
+                        </div>
+                        <div class="review-rating-row">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                            </div>
+                            <span class="review-date">7 months ago</span>
+                        </div>
+                        <div class="review-body">
+                            <p>Absolutely loved my visit to this café! The atmosphere is cozy and welcoming — perfect
+                                for catching up with friends or spending some quiet time alone. The staff were super
+                                friendly and attentive, making the experience even better.</p>
+                        </div>
+                    </div>
+
+                    <!-- Review 7: Nadiya siddiqui -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <img src="assets/users/7.png" alt="Nadiya siddiqui Profile" class="reviewer-avatar">
+                                <div class="reviewer-meta">
+                                    <h4 class="reviewer-name">Nadiya siddiqui</h4>
+                                    <p class="reviewer-stats">12 reviews &middot; 1 photo</p>
+                                </div>
+                            </div>
+                            <button class="review-menu-btn" aria-label="Review Actions">
+                                <i data-lucide="more-vertical"></i>
+                            </button>
+                        </div>
+                        <div class="review-rating-row">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                            </div>
+                            <span class="review-date">7 months ago</span>
+                        </div>
+                        <div class="review-body">
+                            <p>The food here was so amazing and so rich in quality as well tried matcha for the first
+                                time didn't thought I would like but I did like and craving it since then the staff is
+                                very kind and helpful the dumpling was so so good must try the only thing was the the
+                                wait time was alot but was worth it after we tasted</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Review 2: Rushin Shah -->
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <img src="assets/users/3.png" alt="Rushin Shah Profile" class="reviewer-avatar">
-                            <div class="reviewer-meta">
-                                <h4 class="reviewer-name">Rushin Shah</h4>
-                                <p class="reviewer-stats">Local Guide &middot; 28 reviews &middot; 64 photos</p>
+                <!-- Group 2 (Exact Duplicate for Seamless Scrolling) -->
+                <div class="marquee-group" aria-hidden="true">
+                    <!-- Review 1: Jay Sudani -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <img src="assets/users/1.png" alt="Jay Sudani Profile" class="reviewer-avatar">
+                                <div class="reviewer-meta">
+                                    <h4 class="reviewer-name">Jay Sudani</h4>
+                                    <p class="reviewer-stats">6 reviews &middot; 3 photos</p>
+                                </div>
                             </div>
+                            <button class="review-menu-btn" aria-label="Review Actions">
+                                <i data-lucide="more-vertical"></i>
+                            </button>
                         </div>
-                        <button class="review-menu-btn" aria-label="Review Actions">
-                            <i data-lucide="more-vertical"></i>
-                        </button>
-                    </div>
-                    <div class="review-rating-row">
-                        <div class="stars">
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
+                        <div class="review-rating-row">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                            </div>
+                            <span class="review-date">5 months ago</span>
                         </div>
-                        <span class="review-date">3 months ago</span>
+                        <div class="review-body">
+                            <p>Yes, nice cafe.</p>
+                            <p>I was waiting for my bus for the travel trip and I had 2 hours time so I went there and
+                                ordered lemon ice tea and some sandwiches and food was amazing, staff behavior was top
+                                notch, clam and good atmosphere, charging point available</p>
+                            <p>Overall I would say go for it</p>
+                        </div>
                     </div>
-                    <div class="review-body">
-                        <p>I ordered the Belgian Chocolate Panckaes from Cafe Kokomo which I randomly found on Zomato. Nothing but a banger, 10/10 for the presentation, quantity and taste. It did exceed my expectations, for someone who enjoys those fluffy pancackes, I would recommend this place for sure. I look forward to trying more dishes from this place, really impressed.</p>
-                    </div>
-                </div>
 
-                <!-- Review 3: Rasika Birvatkar -->
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <img src="assets/users/4.png" alt="Rasika Birvatkar Profile" class="reviewer-avatar">
-                            <div class="reviewer-meta">
-                                <h4 class="reviewer-name">Rasika Birvatkar</h4>
-                                <p class="reviewer-stats">4 reviews &middot; 4 photos</p>
+                    <!-- Review 2: Rushin Shah -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <img src="assets/users/3.png" alt="Rushin Shah Profile" class="reviewer-avatar">
+                                <div class="reviewer-meta">
+                                    <h4 class="reviewer-name">Rushin Shah</h4>
+                                    <p class="reviewer-stats">Local Guide &middot; 28 reviews &middot; 64 photos</p>
+                                </div>
                             </div>
+                            <button class="review-menu-btn" aria-label="Review Actions">
+                                <i data-lucide="more-vertical"></i>
+                            </button>
                         </div>
-                        <button class="review-menu-btn" aria-label="Review Actions">
-                            <i data-lucide="more-vertical"></i>
-                        </button>
-                    </div>
-                    <div class="review-rating-row">
-                        <div class="stars">
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
+                        <div class="review-rating-row">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                            </div>
+                            <span class="review-date">3 months ago</span>
                         </div>
-                        <span class="review-date">4 months ago</span>
+                        <div class="review-body">
+                            <p>I ordered the Belgian Chocolate Panckaes from Cafe Kokomo which I randomly found on
+                                Zomato. Nothing but a banger, 10/10 for the presentation, quantity and taste. It did
+                                exceed my expectations, for someone who enjoys those fluffy pancackes, I would recommend
+                                this place for sure. I look forward to trying more dishes from this place, really
+                                impressed.</p>
+                        </div>
                     </div>
-                    <div class="review-body">
-                        <p>Had a wonderful experience at Cafe Kokomo. The food was absolutely delicious and well presented. Service was quick, friendly, and attentive. The ambience is cozy and pleasant, making it a perfect place to relax and enjoy good food. Definitely worth visiting again!</p>
-                    </div>
-                </div>
 
-                <!-- Review 4: Prianca143 -->
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <img src="assets/users/2.png" alt="Prianca143 Profile" class="reviewer-avatar">
-                            <div class="reviewer-meta">
-                                <h4 class="reviewer-name">Prianca143</h4>
-                                <p class="reviewer-stats">Local Guide &middot; 10 reviews &middot; 10 photos</p>
+                    <!-- Review 3: Rasika Birvatkar -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <img src="assets/users/4.png" alt="Rasika Birvatkar Profile" class="reviewer-avatar">
+                                <div class="reviewer-meta">
+                                    <h4 class="reviewer-name">Rasika Birvatkar</h4>
+                                    <p class="reviewer-stats">4 reviews &middot; 4 photos</p>
+                                </div>
                             </div>
+                            <button class="review-menu-btn" aria-label="Review Actions">
+                                <i data-lucide="more-vertical"></i>
+                            </button>
                         </div>
-                        <button class="review-menu-btn" aria-label="Review Actions">
-                            <i data-lucide="more-vertical"></i>
-                        </button>
-                    </div>
-                    <div class="review-rating-row">
-                        <div class="stars">
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
+                        <div class="review-rating-row">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                            </div>
+                            <span class="review-date">4 months ago</span>
                         </div>
-                        <span class="review-date">6 months ago</span>
+                        <div class="review-body">
+                            <p>Had a wonderful experience at Cafe Kokomo. The food was absolutely delicious and well
+                                presented. Service was quick, friendly, and attentive. The ambience is cozy and
+                                pleasant, making it a perfect place to relax and enjoy good food. Definitely worth
+                                visiting again!</p>
+                        </div>
                     </div>
-                    <div class="review-body">
-                        <p>Food never dissapoints. Fantastic taste ... Recently addicted to their matcha 🍵 💖 Best gluten free cupcakes in Mumbai!! 🧁 💖 💖</p>
-                    </div>
-                </div>
 
-                <!-- Review 5: kati khalaj -->
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <img src="assets/users/5.png" alt="kati khalaj Profile" class="reviewer-avatar">
-                            <div class="reviewer-meta">
-                                <h4 class="reviewer-name">kati khalaj</h4>
-                                <p class="reviewer-stats">4 reviews</p>
+                    <!-- Review 4: Prianca143 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <img src="assets/users/2.png" alt="Prianca143 Profile" class="reviewer-avatar">
+                                <div class="reviewer-meta">
+                                    <h4 class="reviewer-name">Prianca143</h4>
+                                    <p class="reviewer-stats">Local Guide &middot; 10 reviews &middot; 10 photos</p>
+                                </div>
                             </div>
+                            <button class="review-menu-btn" aria-label="Review Actions">
+                                <i data-lucide="more-vertical"></i>
+                            </button>
                         </div>
-                        <button class="review-menu-btn" aria-label="Review Actions">
-                            <i data-lucide="more-vertical"></i>
-                        </button>
-                    </div>
-                    <div class="review-rating-row">
-                        <div class="stars">
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
+                        <div class="review-rating-row">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                            </div>
+                            <span class="review-date">6 months ago</span>
                         </div>
-                        <span class="review-date">4 months ago</span>
+                        <div class="review-body">
+                            <p>Food never dissapoints. Fantastic taste ... Recently addicted to their matcha 🍵 💖 Best
+                                gluten free cupcakes in Mumbai!! 🧁 💖 💖</p>
+                        </div>
                     </div>
-                    <div class="review-body">
-                        <p>Besides the delicious breakfast, the staff were extremely kind, which made the experience even better. The café had a warm, cozy, and friendly vibe.</p>
-                    </div>
-                </div>
 
-                <!-- Review 6: Silvi Jain -->
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <img src="assets/users/6.png" alt="Silvi Jain Profile" class="reviewer-avatar">
-                            <div class="reviewer-meta">
-                                <h4 class="reviewer-name">Silvi Jain</h4>
-                                <p class="reviewer-stats">2 reviews</p>
+                    <!-- Review 5: kati khalaj -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <img src="assets/users/5.png" alt="kati khalaj Profile" class="reviewer-avatar">
+                                <div class="reviewer-meta">
+                                    <h4 class="reviewer-name">kati khalaj</h4>
+                                    <p class="reviewer-stats">4 reviews</p>
+                                </div>
                             </div>
+                            <button class="review-menu-btn" aria-label="Review Actions">
+                                <i data-lucide="more-vertical"></i>
+                            </button>
                         </div>
-                        <button class="review-menu-btn" aria-label="Review Actions">
-                            <i data-lucide="more-vertical"></i>
-                        </button>
-                    </div>
-                    <div class="review-rating-row">
-                        <div class="stars">
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
+                        <div class="review-rating-row">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                            </div>
+                            <span class="review-date">4 months ago</span>
                         </div>
-                        <span class="review-date">7 months ago</span>
+                        <div class="review-body">
+                            <p>Besides the delicious breakfast, the staff were extremely kind, which made the experience
+                                even better. The café had a warm, cozy, and friendly vibe.</p>
+                        </div>
                     </div>
-                    <div class="review-body">
-                        <p>Absolutely loved my visit to this café! The atmosphere is cozy and welcoming — perfect for catching up with friends or spending some quiet time alone. The staff were super friendly and attentive, making the experience even better.</p>
-                    </div>
-                </div>
 
-                <!-- Review 7: Nadiya siddiqui -->
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <img src="assets/users/7.png" alt="Nadiya siddiqui Profile" class="reviewer-avatar">
-                            <div class="reviewer-meta">
-                                <h4 class="reviewer-name">Nadiya siddiqui</h4>
-                                <p class="reviewer-stats">12 reviews &middot; 1 photo</p>
+                    <!-- Review 6: Silvi Jain -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <img src="assets/users/6.png" alt="Silvi Jain Profile" class="reviewer-avatar">
+                                <div class="reviewer-meta">
+                                    <h4 class="reviewer-name">Silvi Jain</h4>
+                                    <p class="reviewer-stats">2 reviews</p>
+                                </div>
                             </div>
+                            <button class="review-menu-btn" aria-label="Review Actions">
+                                <i data-lucide="more-vertical"></i>
+                            </button>
                         </div>
-                        <button class="review-menu-btn" aria-label="Review Actions">
-                            <i data-lucide="more-vertical"></i>
-                        </button>
-                    </div>
-                    <div class="review-rating-row">
-                        <div class="stars">
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
+                        <div class="review-rating-row">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                            </div>
+                            <span class="review-date">7 months ago</span>
                         </div>
-                        <span class="review-date">7 months ago</span>
+                        <div class="review-body">
+                            <p>Absolutely loved my visit to this café! The atmosphere is cozy and welcoming — perfect
+                                for catching up with friends or spending some quiet time alone. The staff were super
+                                friendly and attentive, making the experience even better.</p>
+                        </div>
                     </div>
-                    <div class="review-body">
-                        <p>The food here was so amazing and so rich in quality as well tried matcha for the first time didn't thought I would like but I did like and craving it since then the staff is very kind and helpful the dumpling was so so good must try the only thing was the the wait time was alot but was worth it after we tasted</p>
+
+                    <!-- Review 7: Nadiya siddiqui -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <img src="assets/users/7.png" alt="Nadiya siddiqui Profile" class="reviewer-avatar">
+                                <div class="reviewer-meta">
+                                    <h4 class="reviewer-name">Nadiya siddiqui</h4>
+                                    <p class="reviewer-stats">12 reviews &middot; 1 photo</p>
+                                </div>
+                            </div>
+                            <button class="review-menu-btn" aria-label="Review Actions">
+                                <i data-lucide="more-vertical"></i>
+                            </button>
+                        </div>
+                        <div class="review-rating-row">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                                <i data-lucide="star" class="star-icon filled"></i>
+                            </div>
+                            <span class="review-date">7 months ago</span>
+                        </div>
+                        <div class="review-body">
+                            <p>The food here was so amazing and so rich in quality as well tried matcha for the first
+                                time didn't thought I would like but I did like and craving it since then the staff is
+                                very kind and helpful the dumpling was so so good must try the only thing was the the
+                                wait time was alot but was worth it after we tasted</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Group 2 (Exact Duplicate for Seamless Scrolling) -->
-            <div class="marquee-group" aria-hidden="true">
-                <!-- Review 1: Jay Sudani -->
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <img src="assets/users/1.png" alt="Jay Sudani Profile" class="reviewer-avatar">
-                            <div class="reviewer-meta">
-                                <h4 class="reviewer-name">Jay Sudani</h4>
-                                <p class="reviewer-stats">6 reviews &middot; 3 photos</p>
-                            </div>
-                        </div>
-                        <button class="review-menu-btn" aria-label="Review Actions">
-                            <i data-lucide="more-vertical"></i>
-                        </button>
-                    </div>
-                    <div class="review-rating-row">
-                        <div class="stars">
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                        </div>
-                        <span class="review-date">5 months ago</span>
-                    </div>
-                    <div class="review-body">
-                        <p>Yes, nice cafe.</p>
-                        <p>I was waiting for my bus for the travel trip and I had 2 hours time so I went there and ordered lemon ice tea and some sandwiches and food was amazing, staff behavior was top notch, clam and good atmosphere, charging point available</p>
-                        <p>Overall I would say go for it</p>
-                    </div>
-                </div>
-
-                <!-- Review 2: Rushin Shah -->
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <img src="assets/users/3.png" alt="Rushin Shah Profile" class="reviewer-avatar">
-                            <div class="reviewer-meta">
-                                <h4 class="reviewer-name">Rushin Shah</h4>
-                                <p class="reviewer-stats">Local Guide &middot; 28 reviews &middot; 64 photos</p>
-                            </div>
-                        </div>
-                        <button class="review-menu-btn" aria-label="Review Actions">
-                            <i data-lucide="more-vertical"></i>
-                        </button>
-                    </div>
-                    <div class="review-rating-row">
-                        <div class="stars">
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                        </div>
-                        <span class="review-date">3 months ago</span>
-                    </div>
-                    <div class="review-body">
-                        <p>I ordered the Belgian Chocolate Panckaes from Cafe Kokomo which I randomly found on Zomato. Nothing but a banger, 10/10 for the presentation, quantity and taste. It did exceed my expectations, for someone who enjoys those fluffy pancackes, I would recommend this place for sure. I look forward to trying more dishes from this place, really impressed.</p>
-                    </div>
-                </div>
-
-                <!-- Review 3: Rasika Birvatkar -->
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <img src="assets/users/4.png" alt="Rasika Birvatkar Profile" class="reviewer-avatar">
-                            <div class="reviewer-meta">
-                                <h4 class="reviewer-name">Rasika Birvatkar</h4>
-                                <p class="reviewer-stats">4 reviews &middot; 4 photos</p>
-                            </div>
-                        </div>
-                        <button class="review-menu-btn" aria-label="Review Actions">
-                            <i data-lucide="more-vertical"></i>
-                        </button>
-                    </div>
-                    <div class="review-rating-row">
-                        <div class="stars">
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                        </div>
-                        <span class="review-date">4 months ago</span>
-                    </div>
-                    <div class="review-body">
-                        <p>Had a wonderful experience at Cafe Kokomo. The food was absolutely delicious and well presented. Service was quick, friendly, and attentive. The ambience is cozy and pleasant, making it a perfect place to relax and enjoy good food. Definitely worth visiting again!</p>
-                    </div>
-                </div>
-
-                <!-- Review 4: Prianca143 -->
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <img src="assets/users/2.png" alt="Prianca143 Profile" class="reviewer-avatar">
-                            <div class="reviewer-meta">
-                                <h4 class="reviewer-name">Prianca143</h4>
-                                <p class="reviewer-stats">Local Guide &middot; 10 reviews &middot; 10 photos</p>
-                            </div>
-                        </div>
-                        <button class="review-menu-btn" aria-label="Review Actions">
-                            <i data-lucide="more-vertical"></i>
-                        </button>
-                    </div>
-                    <div class="review-rating-row">
-                        <div class="stars">
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                        </div>
-                        <span class="review-date">6 months ago</span>
-                    </div>
-                    <div class="review-body">
-                        <p>Food never dissapoints. Fantastic taste ... Recently addicted to their matcha 🍵 💖 Best gluten free cupcakes in Mumbai!! 🧁 💖 💖</p>
-                    </div>
-                </div>
-
-                <!-- Review 5: kati khalaj -->
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <img src="assets/users/5.png" alt="kati khalaj Profile" class="reviewer-avatar">
-                            <div class="reviewer-meta">
-                                <h4 class="reviewer-name">kati khalaj</h4>
-                                <p class="reviewer-stats">4 reviews</p>
-                            </div>
-                        </div>
-                        <button class="review-menu-btn" aria-label="Review Actions">
-                            <i data-lucide="more-vertical"></i>
-                        </button>
-                    </div>
-                    <div class="review-rating-row">
-                        <div class="stars">
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                        </div>
-                        <span class="review-date">4 months ago</span>
-                    </div>
-                    <div class="review-body">
-                        <p>Besides the delicious breakfast, the staff were extremely kind, which made the experience even better. The café had a warm, cozy, and friendly vibe.</p>
-                    </div>
-                </div>
-
-                <!-- Review 6: Silvi Jain -->
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <img src="assets/users/6.png" alt="Silvi Jain Profile" class="reviewer-avatar">
-                            <div class="reviewer-meta">
-                                <h4 class="reviewer-name">Silvi Jain</h4>
-                                <p class="reviewer-stats">2 reviews</p>
-                            </div>
-                        </div>
-                        <button class="review-menu-btn" aria-label="Review Actions">
-                            <i data-lucide="more-vertical"></i>
-                        </button>
-                    </div>
-                    <div class="review-rating-row">
-                        <div class="stars">
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                        </div>
-                        <span class="review-date">7 months ago</span>
-                    </div>
-                    <div class="review-body">
-                        <p>Absolutely loved my visit to this café! The atmosphere is cozy and welcoming — perfect for catching up with friends or spending some quiet time alone. The staff were super friendly and attentive, making the experience even better.</p>
-                    </div>
-                </div>
-
-                <!-- Review 7: Nadiya siddiqui -->
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <img src="assets/users/7.png" alt="Nadiya siddiqui Profile" class="reviewer-avatar">
-                            <div class="reviewer-meta">
-                                <h4 class="reviewer-name">Nadiya siddiqui</h4>
-                                <p class="reviewer-stats">12 reviews &middot; 1 photo</p>
-                            </div>
-                        </div>
-                        <button class="review-menu-btn" aria-label="Review Actions">
-                            <i data-lucide="more-vertical"></i>
-                        </button>
-                    </div>
-                    <div class="review-rating-row">
-                        <div class="stars">
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                            <i data-lucide="star" class="star-icon filled"></i>
-                        </div>
-                        <span class="review-date">7 months ago</span>
-                    </div>
-                    <div class="review-body">
-                        <p>The food here was so amazing and so rich in quality as well tried matcha for the first time didn't thought I would like but I did like and craving it since then the staff is very kind and helpful the dumpling was so so good must try the only thing was the the wait time was alot but was worth it after we tasted</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!-- 7. Instagram Social Section -->
@@ -2739,22 +2811,25 @@
                     <p class="footer-tagline">Crafted with coffee & aesthetics.</p>
 
                     <!-- Sanctuary Map Widget -->
-                    <div class="sanctuary-map-widget">
+                    <div class="sanctuary-map-widget" id="map-section">
                         <div id="footer-map"></div>
                         <div class="map-overlay-card">
                             <h3 class="map-card-title">Escape to the Sanctuary</h3>
                             <p class="map-card-subtitle">Locate Cafe Kokomo. in Santacruz East.</p>
-                            
+
                             <div class="map-card-action-container">
                                 <button id="btn-fetch-location" class="btn-map-action">Fetch My Location</button>
-                                
+
                                 <div id="location-details" class="location-details hidden">
                                     <p class="details-status">📍 Location Fetched!</p>
                                     <div class="details-subcard">
-                                        <p class="details-distance">You are <strong id="val-distance">--</strong> away from the sanctuary.</p>
-                                        <p class="details-time">Estimated driving time: <strong id="val-time">--</strong>.<span class="indicator-dot"></span></p>
+                                        <p class="details-distance">You are <strong id="val-distance">--</strong> away
+                                            from the sanctuary.</p>
+                                        <p class="details-time">Estimated driving time: <strong
+                                                id="val-time">--</strong>.<span class="indicator-dot"></span></p>
                                     </div>
-                                    <button id="btn-start-navigation" class="btn-map-action btn-dark">Start Navigation</button>
+                                    <button id="btn-start-navigation" class="btn-map-action btn-dark">Start
+                                        Navigation</button>
                                 </div>
                             </div>
                         </div>
@@ -2773,7 +2848,9 @@
 
                 <div class="footer-links-col">
                     <span class="footer-label">Visit Us</span>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=4%2C%20Pratap%2C%20Cafe%20Kokomo%2C%20CHS%20LTD%2C%20Shivaji%20Road%2C%20near%20Vakola%20Bridge%2C%20Pratiksha%20Nagar%2C%20Vakola%2C%20Santacruz%20East%2C%20Mumbai%2C%20Maharashtra%20400055" target="_blank" class="footer-address-link" aria-label="Get directions to Cafe Kokomo on Google Maps">
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=4%2C%20Pratap%2C%20Cafe%20Kokomo%2C%20CHS%20LTD%2C%20Shivaji%20Road%2C%20near%20Vakola%20Bridge%2C%20Pratiksha%20Nagar%2C%20Vakola%2C%20Santacruz%20East%2C%20Mumbai%2C%20Maharashtra%20400055"
+                        target="_blank" class="footer-address-link"
+                        aria-label="Get directions to Cafe Kokomo on Google Maps">
                         <p class="footer-info"><b>Cafe Kokomo</b></p>
                         <p class="footer-info">4, Pratap CHS Limited,</p>
                         <p class="footer-info">Shivaji Road, near Vakola Bridge,</p>
@@ -2812,12 +2889,128 @@
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/918591515657" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <a href="javascript:void(0)" id="whatsapp-floating-btn" class="whatsapp-float" aria-label="Chat on WhatsApp">
         <span class="whatsapp-tooltip">Chat with us</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
         </svg>
     </a>
+
+    <!-- Reservation Form Modal -->
+    <div class="wa-reservation-modal" id="wa-reservation-modal" aria-hidden="true" role="dialog">
+        <div class="wa-reservation-modal-overlay" id="wa-reservation-modal-overlay"></div>
+        <div class="wa-reservation-modal-card">
+            <button class="wa-reservation-modal-close" id="wa-reservation-modal-close-btn"
+                aria-label="Close Reservation Form">
+                <i data-lucide="x"></i>
+            </button>
+            <form id="wa-reservation-form" class="wa-reservation-form">
+                <div class="wa-form-row">
+                    <div class="wa-form-group">
+                        <label for="wa-reserve-name">Full Name</label>
+                        <input type="text" id="wa-reserve-name" placeholder="e.g. Kabir Sen" required>
+                    </div>
+                    <div class="wa-form-group">
+                        <label for="wa-reserve-guests">Guests Count</label>
+                        <div class="wa-select-wrapper">
+                            <select id="wa-reserve-guests" required>
+                                <option value="1 Guest (Solo)">1 Guest (Solo)</option>
+                                <option value="2 Guests (Intimate)" selected>2 Guests (Intimate)</option>
+                                <option value="3 Guests (Small Group)">3 Guests (Small Group)</option>
+                                <option value="4 Guests (Standard)">4 Guests (Standard)</option>
+                                <option value="5 Guests (Gathering)">5 Guests (Gathering)</option>
+                                <option value="6 Guests (Gathering)">6 Guests (Gathering)</option>
+                                <option value="7+ Guests (Large Group)">7+ Guests (Large Group)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wa-form-row">
+                    <div class="wa-form-group">
+                        <label for="wa-reserve-date">Desired Date</label>
+                        <input type="date" id="wa-reserve-date" required>
+                    </div>
+                    <div class="wa-form-group">
+                        <label for="wa-reserve-time">Preferred Time</label>
+                        <div class="wa-select-wrapper">
+                            <select id="wa-reserve-time" required>
+                                <option value="11:00 AM" selected>11:00 AM</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="1:00 PM">1:00 PM</option>
+                                <option value="2:00 PM">2:00 PM</option>
+                                <option value="3:00 PM">3:00 PM</option>
+                                <option value="4:00 PM">4:00 PM</option>
+                                <option value="5:00 PM">5:00 PM</option>
+                                <option value="6:00 PM">6:00 PM</option>
+                                <option value="7:00 PM">7:00 PM</option>
+                                <option value="8:00 PM">8:00 PM</option>
+                                <option value="9:00 PM">9:00 PM</option>
+                                <option value="10:00 PM">10:00 PM</option>
+                                <option value="11:00 PM">11:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wa-form-group wa-full-width">
+                    <label for="wa-reserve-requests">Special Requests (Dietary/Seating)</label>
+                    <textarea id="wa-reserve-requests"
+                        placeholder="e.g. Low seating preference, dietary restrictions..."></textarea>
+                </div>
+
+                <button type="submit" class="wa-btn-submit">Send WhatsApp Reservation</button>
+
+                <p class="wa-reservation-footer-text">
+                    Secure instant verification via our encrypted <a href="https://wa.me/918591515657" target="_blank"
+                        class="wa-concierge-link">WhatsApp Concierge Link</a>.
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Order Online Modal -->
+    <div class="order-online-modal" id="order-online-modal" aria-hidden="true" role="dialog">
+        <div class="order-online-modal-overlay" id="order-online-modal-overlay"></div>
+        <div class="order-online-modal-card">
+            <button class="order-online-modal-close" id="order-online-modal-close-btn" aria-label="Close Order Options">
+                <i data-lucide="x"></i>
+            </button>
+            <h2 class="order-online-modal-title">Order Online</h2>
+            <p class="order-online-modal-subtitle">Experience the sensory curation of Cafe Kokomo. in the comfort of
+                your sanctuary.</p>
+
+            <div class="order-options-grid">
+                <!-- Zomato Card -->
+                <a href="https://www.zomato.com/mumbai/cafe-kokomo-santacruz-east/order" target="_blank"
+                    rel="noopener noreferrer" class="order-option-card">
+                    <div class="order-logo-wrapper">
+                        <img src="assets/order/image1.png" alt="Zomato" class="order-logo">
+                    </div>
+                    <span class="order-option-title">ZOMATO</span>
+                </a>
+
+                <!-- Swiggy Card -->
+                <a href="https://www.swiggy.com/city/mumbai/cafe-kokomo-santacruz-east-rest431996" target="_blank"
+                    rel="noopener noreferrer" class="order-option-card">
+                    <div class="order-logo-wrapper">
+                        <img src="assets/order/image2.png" alt="Swiggy" class="order-logo">
+                    </div>
+                    <span class="order-option-title">SWIGGY</span>
+                </a>
+
+                <!-- Dotpe Card -->
+                <a href="https://cafekokomo.dotpe.in/" target="_blank" rel="noopener noreferrer"
+                    class="order-option-card">
+                    <div class="order-logo-wrapper">
+                        <img src="assets/order/image3.png" alt="Dotpe" class="order-logo">
+                    </div>
+                    <span class="order-option-title">DOTPE</span>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- Leaflet Map JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>

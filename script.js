@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const scrollTop = window.scrollY;
         const docHeight = document.documentElement.scrollHeight - window.innerHeight;
         const scrolledPercentage = (scrollTop / docHeight) * 100;
-        
+
         // Progress bar width
         if (scrollProgress) {
             scrollProgress.style.width = scrolledPercentage + '%';
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
        SCROLL REVEAL (INTERSECTION OBSERVER)
        ========================================================================== */
     const revealElements = document.querySelectorAll('.reveal-on-scroll');
-    
+
     if ('IntersectionObserver' in window) {
         const revealObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const itemCategory = item.getAttribute('data-category');
             const itemName = item.querySelector('.menu-item-name')?.textContent.toLowerCase() || '';
             const itemDesc = item.querySelector('.menu-item-desc')?.textContent.toLowerCase() || '';
-            
+
             const matchesCategory = activeCategory === 'all' || itemCategory === activeCategory;
             const matchesSearch = itemName.includes(searchQuery) || itemDesc.includes(searchQuery);
 
@@ -168,10 +168,10 @@ document.addEventListener('DOMContentLoaded', () => {
     filterButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             const isCurrentlyActive = btn.classList.contains('active');
-            
+
             // Remove active class from all buttons
             filterButtons.forEach(b => b.classList.remove('active'));
-            
+
             if (isCurrentlyActive) {
                 // If clicked an already active button, deselect it and show all items
                 activeCategory = 'all';
@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const lightboxClose = document.getElementById('lightbox-close-btn');
     const lightboxPrev = document.getElementById('lightbox-prev-btn');
     const lightboxNext = document.getElementById('lightbox-next-btn');
-    
+
     let currentImageIndex = 0;
     const imagesData = [];
 
@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Keyboard controls for lightbox
     document.addEventListener('keydown', (e) => {
         if (!lightboxModal.classList.contains('open')) return;
-        
+
         if (e.key === 'Escape') {
             closeLightbox();
         } else if (e.key === 'ArrowLeft') {
@@ -352,10 +352,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const R = 6371; // Earth radius in km
             const dLat = (lat2 - lat1) * Math.PI / 180;
             const dLon = (lon2 - lon1) * Math.PI / 180;
-            const a = 
-                Math.sin(dLat/2) * Math.sin(dLat/2) +
-                Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
-                Math.sin(dLon/2) * Math.sin(dLon/2);
+            const a =
+                Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                Math.sin(dLon / 2) * Math.sin(dLon / 2);
             const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
             return R * c;
         };
@@ -433,4 +433,174 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    /* ==========================================================================
+       WHATSAPP RESERVATION FORM MODAL
+       ========================================================================== */
+    const waModal = document.getElementById('wa-reservation-modal');
+    const waOpenBtn = document.getElementById('whatsapp-floating-btn');
+    const waCloseBtn = document.getElementById('wa-reservation-modal-close-btn');
+    const waOverlay = document.getElementById('wa-reservation-modal-overlay');
+    const waForm = document.getElementById('wa-reservation-form');
+
+    // Default desired date to tomorrow's date
+    const dateInput = document.getElementById('wa-reserve-date');
+    if (dateInput) {
+        const today = new Date();
+        const tomorrow = new Date(today);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+
+        const year = tomorrow.getFullYear();
+        const month = String(tomorrow.getMonth() + 1).padStart(2, '0');
+        const day = String(tomorrow.getDate()).padStart(2, '0');
+
+        dateInput.value = `${year}-${month}-${day}`;
+
+        // Set min date to today
+        const minYear = today.getFullYear();
+        const minMonth = String(today.getMonth() + 1).padStart(2, '0');
+        const minDay = String(today.getDate()).padStart(2, '0');
+        dateInput.min = `${minYear}-${minMonth}-${minDay}`;
+    }
+
+    const openWaModal = () => {
+        if (waModal) {
+            waModal.classList.add('open');
+            waModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden'; // Lock background scroll
+        }
+    };
+
+    const closeWaModal = () => {
+        if (waModal) {
+            waModal.classList.remove('open');
+            waModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = 'auto'; // Restore scroll
+        }
+    };
+
+    if (waOpenBtn) {
+        waOpenBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            openWaModal();
+        });
+    }
+
+    if (waCloseBtn) waCloseBtn.addEventListener('click', closeWaModal);
+    if (waOverlay) waOverlay.addEventListener('click', closeWaModal);
+
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+        if (waModal && waModal.classList.contains('open') && e.key === 'Escape') {
+            closeWaModal();
+        }
+    });
+
+    // Helper: format YYYY-MM-DD date to "1 May 2026"
+    const formatDateString = (dateStr) => {
+        if (!dateStr) return '';
+        const parts = dateStr.split('-');
+        if (parts.length !== 3) return dateStr;
+
+        const year = parts[0];
+        const monthIdx = parseInt(parts[1], 10) - 1;
+        const day = parseInt(parts[2], 10);
+
+        const months = [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ];
+        const monthName = months[monthIdx] || '';
+        return `${day} ${monthName} ${year}`;
+    };
+
+    // Helper: format Guest option to "2 seating"
+    const formatGuests = (optionVal) => {
+        // e.g. "2 Guests (Intimate)" -> match digits or fallback
+        const match = optionVal.match(/^(\d+|\d+\+)/);
+        if (match) {
+            return `${match[1]} seating`;
+        }
+        return optionVal; // fallback
+    };
+
+    // Handle Form Submit
+    if (waForm) {
+        waForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('wa-reserve-name').value.trim();
+            const rawGuests = document.getElementById('wa-reserve-guests').value;
+            const rawDate = document.getElementById('wa-reserve-date').value;
+            const time = document.getElementById('wa-reserve-time').value;
+            const rawRequests = document.getElementById('wa-reserve-requests').value.trim();
+
+            const guestsFormatted = formatGuests(rawGuests);
+            const dateFormatted = formatDateString(rawDate);
+            const requestsFormatted = rawRequests ? `"${rawRequests}"` : '"none"';
+
+            // Format message exactly as required:
+            // "Hello Cafe Kokomo. Concierge, I would like to request an exclusive reservation under your tropical canopy: • Name: aryan • Guests: 2 seating • Date: 1 May 2026 • Time: 11:00 AM • Special Curation Requests: "none" Thank you, please confirm availability."
+            const message = `Hello Cafe Kokomo. I would like to request an exclusive reservation under your tropical canopy: • Name: ${name} • Guests: ${guestsFormatted} • Date: ${dateFormatted} • Time: ${time} • Special Curation Requests: ${requestsFormatted} Thank you, please confirm availability.`;
+
+            const phone = "918591515657";
+            const encodedMsg = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${phone}?text=${encodedMsg}`;
+
+            // Close the modal
+            closeWaModal();
+
+            // Redirect in a new tab
+            window.open(whatsappUrl, '_blank');
+        });
+    }
+
+    /* ==========================================================================
+       ORDER ONLINE FORM MODAL
+       ========================================================================== */
+    const orderModal = document.getElementById('order-online-modal');
+    const orderOpenBtn = document.getElementById('order-online-btn');
+    const orderCloseBtn = document.getElementById('order-online-modal-close-btn');
+    const orderOverlay = document.getElementById('order-online-modal-overlay');
+
+    const openOrderModal = () => {
+        if (orderModal) {
+            orderModal.classList.add('open');
+            orderModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden'; // Lock background scroll
+        }
+    };
+
+    const closeOrderModal = () => {
+        if (orderModal) {
+            orderModal.classList.remove('open');
+            orderModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = 'auto'; // Restore scroll
+        }
+    };
+
+    if (orderOpenBtn) {
+        orderOpenBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            openOrderModal();
+        });
+    }
+
+    if (orderCloseBtn) orderCloseBtn.addEventListener('click', closeOrderModal);
+    if (orderOverlay) orderOverlay.addEventListener('click', closeOrderModal);
+
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+        if (orderModal && orderModal.classList.contains('open') && e.key === 'Escape') {
+            closeOrderModal();
+        }
+    });
+
+    // Close modal when clicking any option card (so it opens in new tab and closes popup)
+    const orderCards = document.querySelectorAll('.order-option-card');
+    orderCards.forEach(card => {
+        card.addEventListener('click', () => {
+            closeOrderModal();
+        });
+    });
 });
