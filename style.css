@@ -2543,3 +2543,25 @@ img {
         font-size: 0.9rem;
     }
 }
+
+/* ==========================================================================
+   GOOGLE REVIEW CTA
+   ========================================================================== */
+.btn-google-review {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-google-review .review-btn-icon {
+    width: 18px;
+    height: 18px;
+    fill: #F4B400; /* Google star gold */
+    stroke: #F4B400;
+    transition: fill var(--duration-fast), stroke var(--duration-fast);
+}
+
+.btn-google-review:hover .review-btn-icon {
+    fill: var(--color-text-primary);
+    stroke: var(--color-text-primary);
+}
