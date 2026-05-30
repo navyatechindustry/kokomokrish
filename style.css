@@ -123,7 +123,7 @@ img {
 }
 
 .section-padding {
-    padding: 140px 0;
+    padding: clamp(60px, 8vw, 140px) 0;
 }
 
 .text-center {
@@ -157,7 +157,7 @@ img {
 }
 
 .section-desc {
-    font-size: 1.15rem;
+    font-size: clamp(1rem, 1.1vw, 1.15rem);
     color: var(--color-text-secondary);
     line-height: 1.8;
     margin-bottom: 30px;
@@ -360,7 +360,8 @@ img {
    ========================================================================== */
 .hero {
     height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -423,7 +424,7 @@ img {
 }
 
 .hero-subtitle {
-    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-size: clamp(0.95rem, 1.5vw, 1.4rem);
     font-weight: 300;
     letter-spacing: 0.15em;
     margin-bottom: 45px;
@@ -1365,6 +1366,7 @@ img {
 
     .about-features {
         gap: 30px;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
@@ -1382,8 +1384,13 @@ img {
     }
 
     .footer-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: 40px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+        margin-bottom: 25px;
     }
 
     /* Lightbox button offsets on tablet/mobile */
@@ -1411,6 +1418,11 @@ img {
         mask-image: linear-gradient(to right, #000 85%, transparent);
         -webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
         margin-bottom: 40px;
+        scrollbar-width: none;
+    }
+
+    .menu-filters::-webkit-scrollbar {
+        display: none;
     }
 
     .filter-btn {
@@ -2126,6 +2138,28 @@ img {
     transform: scale(0.95) translateY(15px);
     transition: transform var(--duration-medium) var(--transition-slow);
     z-index: 2;
+    max-height: 90vh;
+    max-height: 90dvh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(15, 15, 15, 0.2) transparent;
+}
+
+.wa-reservation-modal-card::-webkit-scrollbar {
+    width: 6px;
+}
+
+.wa-reservation-modal-card::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.wa-reservation-modal-card::-webkit-scrollbar-thumb {
+    background: rgba(15, 15, 15, 0.15);
+    border-radius: 3px;
+}
+
+.wa-reservation-modal-card::-webkit-scrollbar-thumb:hover {
+    background: rgba(15, 15, 15, 0.35);
 }
 
 .wa-reservation-modal.open .wa-reservation-modal-card {
@@ -2377,6 +2411,28 @@ img {
     transition: transform var(--duration-medium) var(--transition-slow);
     z-index: 2;
     text-align: center;
+    max-height: 90vh;
+    max-height: 90dvh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.order-online-modal-card::-webkit-scrollbar {
+    width: 6px;
+}
+
+.order-online-modal-card::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.order-online-modal-card::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+}
+
+.order-online-modal-card::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.35);
 }
 
 .order-online-modal.open .order-online-modal-card {
