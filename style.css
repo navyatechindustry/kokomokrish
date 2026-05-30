@@ -2426,7 +2426,7 @@ img {
 
 .order-options-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
 }
@@ -2491,15 +2491,6 @@ img {
 .order-option-card:nth-child(2) .order-logo {
     width: 58%;
     height: 58%;
-}
-
-/* Dotpe Specific Scaling & Alignment */
-.order-option-card:nth-child(3) .order-logo-wrapper {
-    background-color: #ffffff; /* Clean white matching Dotpe logo theme */
-}
-.order-option-card:nth-child(3) .order-logo {
-    width: 72%;
-    height: 72%;
 }
 
 .order-option-title {
